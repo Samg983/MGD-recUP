@@ -51,8 +51,6 @@ public class GameLogic : MonoBehaviour {
             print("User has " + fingerCount + " finger(s) touching the screen");
         */
 
-		Debug.Log("trol");
-		Debug.Log(Input.touchCount);
     }
 
 }

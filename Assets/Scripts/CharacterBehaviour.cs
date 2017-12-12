@@ -29,6 +29,12 @@ public class CharacterBehaviour : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		HandleMovement(horizontal);
 		Flip(horizontal);
+
+		if(Input.GetKeyDown(KeyCode.UpArrow)){
+			Debug.Log("up");
+			rb2d.AddForce(new Vector2(rb2d.velocity.x, 7f), ForceMode2D.Impulse);
+
+		}
 	}
 
 	private void HandleMovement(float horizontal){
@@ -50,6 +56,8 @@ public class CharacterBehaviour : MonoBehaviour {
 
 			//sprite.transform.localScale = theScale;
 		}
+
+		
 	}
 }
 
