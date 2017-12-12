@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestScript : MonoBehaviour {
-
+	public string test;
 	// Use this for initialization
 	void Start () {
 		
