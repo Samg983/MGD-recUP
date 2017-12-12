@@ -15,7 +15,6 @@ public class CharacterBehaviour : MonoBehaviour {
 
 	[SerializeField]
 	private SpriteRenderer sprite;
-	
 
 	// Use this for initialization
 	void Start () {
@@ -54,26 +53,3 @@ public class CharacterBehaviour : MonoBehaviour {
 	}
 }
 
-
-       
-        if (Input.touchCount > 0)
-        {
-            var touchPos = Input.GetTouch(0).position;
-            print (touchPos);
-            if (topLeft.Contains(touchPos))
-            {
-                Debug.Log("topLeft touched");
-            }
-            if (bottomLeft.Contains(touchPos))
-            {
-                Debug.Log("bottomLeft touched");
-            }
-            if (topRight.Contains(touchPos))
-            {
-                Debug.Log("topRight touched");
-            }  
-            if (bottomRight.Contains(touchPos))
-            {
-                Debug.Log("bottomRight touched");
-            }
-        }
